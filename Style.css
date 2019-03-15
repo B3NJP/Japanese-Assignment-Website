@@ -1,0 +1,16 @@
+.hTitle {
+  text-align: center;
+}
+
+.links {
+  position: sticky;
+  background-color: white;
+}
+
+.links a {
+  
+}
+
+body {
+  background-color: rgb(220, 220, 220);
+}
