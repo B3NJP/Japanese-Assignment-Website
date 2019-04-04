@@ -6,82 +6,46 @@
     <link rel="stylesheet" href="Style.css">
   </head>
   <body>
-    <h1 class="hTitle">Japanese Assignment</h1>
+    <h1 class="hTitle">Religion in Japan</h1>
     <iframe src="Modules/links.html" class="links"></iframe>
-    <div class="arBox">
-      <h2>What We Are Doing</h2>
+    <img src="images/NightTemple.jpg" alt="NightTemple.jpg" style="width: 33%;"></img>
+    <div class="arBox" style="width: 47%; float: left;">
+      <h2>Religion</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-  </div>
-  <div class="arBox">
-    <h2>When We Are Doing</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-  </div>
-  <div class="arBox">
-    <h2>How We Are Doing</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-  </div>
-  <div class="arBox">
-    <h2>Where We Are Doing</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-  </div>
-  <div class="arBox">
-    <h2>Why We Are Doing</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-  </div>
-  <div class="arBox">
-    <h2>Chart</h2>
-    <div id="piechart"></div>
-  </div>
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript" src="Script.js"></script>
-  <script type="text/javascript">
-  // Load google charts
-  google.charts.load('current', {'packages':['corechart']});
-  google.charts.setOnLoadCallback(drawChart);
+        Religion has an important place in Japanese culture. The traditions with religious roots are still practiced by the general population despite a large percentage of the Japanese population holding no religion. The shrines are often viewed as a part of Japan’s identity. Many religious concepts have a large influence on entertainment.
+<br><br>
+The majority of the population practice no religion/folk Shinto being 51.8%. The largest religion in Japan is Buddhism, holding 34.9% of the total population. After that, Christianity hold 2.3%.
+      </p>
+    </div>
+    <div class="arBox" style="float: right; width: 47%; padding-top: 10px">
+      <h2>Chart</h2>
+      <div id="piechart"></div>
+    </div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="Script.js"></script>
+    <script type="text/javascript">
+    // Load google charts
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
 
-  // Draw the chart and set the chart values
-  function drawChart() {
-    var data = google.visualization.arrayToDataTable([
-    ['Religion', 'Percentage of population'],
-    ['No Religion/Folk Shinto', 66252200],
-    ['Buddhism', 44637100],
-    ['No Answer', 8953000],
-    ['Other', 4988100+127900],
-    ['Christian', 2941700]
-    ]);
+    // Draw the chart and set the chart values
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+      ['Religion', 'Percentage of population'],
+      ['No Religion/Folk Shinto', 66252200],
+      ['Buddhism', 44637100],
+      ['No Answer', 8953000],
+      ['Other', 4988100+127900],
+      ['Christian', 2941700]
+      ]);
 
-    // Optional; add a title and set the width and height of the chart
-    var options = {'title':'Population by Religion in Japan 2006', 'width':500, 'height':400, 'chartArea':{'width': 500, 'height': 400}};
+      // Optional; add a title and set the width and height of the chart
+      var options = {'title':'Population by Religion in Japan 2006', 'width':500, 'height':400, 'chartArea':{'width': 500, 'height': 400}};
 
-    // Display the chart inside the <div> element with id="piechart"
-    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-    chart.draw(data, options);
-  }
-  </script>
+      // Display the chart inside the <div> element with id="piechart"
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+      chart.draw(data, options);
+    }
+    </script>
   </body>
 </html>
