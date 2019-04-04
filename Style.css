@@ -57,3 +57,11 @@ iframe.links {
   margin-top: 5px;
   padding-bottom: 20px;
 }
+
+img {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
